@@ -1,0 +1,28 @@
+Format: 1.8
+Date: Wed, 30 May 2012 16:56:03 +0100
+Source: alienfx
+Binary: alienfx
+Architecture: source i386
+Version: 1.0
+Distribution: unstable
+Urgency: low
+Maintainer: Simon Tibble <simon@tibble.net>
+Changed-By: Simon Tibble <simon@tibble.net>
+Description: 
+ alienfx    - Alienware AlienFX Light Manipulation Program
+Changes: 
+ alienfx (1.0) unstable; urgency=low
+ .
+   * First version
+Checksums-Sha1: 
+ d2ee0c5dd51b58bee6c463650473c8df498aa1de 471 alienfx_1.0.dsc
+ 838b6b5b0c6501625c330888ecebe780bda409cd 33018 alienfx_1.0.tar.gz
+ c2d2ff7595c8e881bf531778b352167cfb043a53 34142 alienfx_1.0_i386.deb
+Checksums-Sha256: 
+ 32313dc2f84d79143e9d683c1bdde385e906f745810d6616e343aa9e8e252f03 471 alienfx_1.0.dsc
+ c9e60a211bbdeb9a6c58a3711f90710df29abd5a0403135c0e0e91dcb4f55306 33018 alienfx_1.0.tar.gz
+ f0a4082cf71acba73e68e606bb0c041399b8963948eeabb88d2c394dc8c8266e 34142 alienfx_1.0_i386.deb
+Files: 
+ c942934ad6ac609f13bc2bfedf66d833 471 misc optional alienfx_1.0.dsc
+ 5efe8eb4c35dfa215ad73d17a6421d63 33018 misc optional alienfx_1.0.tar.gz
+ e4d6d9aecfb2964b4020b98f0501052b 34142 misc optional alienfx_1.0_i386.deb

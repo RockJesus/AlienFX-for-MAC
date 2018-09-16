@@ -1,0 +1,24 @@
+﻿正在卸载程序集“C:\Program Files\Alienware\Command Center\AlienFusionService.exe”。
+受影响的参数是:
+   logtoconsole = 
+   assemblypath = C:\Program Files\Alienware\Command Center\AlienFusionService.exe
+   logfile = C:\Program Files\Alienware\Command Center\AlienFusionService.InstallLog
+正在移除 EventLog 源 AlienFusionService。
+警告: 源 AlienFusionService 未在本地计算机上注册。
+正在从系统中移除服务 AlienFusionService...
+在卸载 System.ServiceProcess.ServiceInstaller 安装程序的过程中发生异常。
+System.ComponentModel.Win32Exception: 指定的服务未安装。
+在卸载的过程中发生异常。将忽略该异常并继续卸载。但是，在卸载完成之后应用程序可能未完全卸载。
+正在安装程序集“C:\Program Files\Alienware\Command Center\AlienFusionService.exe”。
+受影响的参数是:
+   logtoconsole = 
+   assemblypath = C:\Program Files\Alienware\Command Center\AlienFusionService.exe
+   logfile = C:\Program Files\Alienware\Command Center\AlienFusionService.InstallLog
+正在安装服务 AlienFusionService...
+已成功安装服务 AlienFusionService。
+正在日志 Application 中创建 EventLog 源 AlienFusionService...
+正在提交程序集“C:\Program Files\Alienware\Command Center\AlienFusionService.exe”。
+受影响的参数是:
+   logtoconsole = 
+   assemblypath = C:\Program Files\Alienware\Command Center\AlienFusionService.exe
+   logfile = C:\Program Files\Alienware\Command Center\AlienFusionService.InstallLog

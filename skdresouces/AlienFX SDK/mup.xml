@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MUPDefinition xsi:schemaLocation="http://schemas.dell.com/openmanage/cm/2/0/mupdefinition.xsd mupdefinition.xsd" xmlns="http://schemas.dell.com/openmanage/cm/2/0/mupdefinition.xsd"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <packageinformation>
+    <name>AWCC Command Center</name> 
+    <version>4.7.10.0</version>
+    <installertype>installshield installscript</installertype>
+    <packagegrouping>single_package</packagegrouping>
+    <releasetype>APP</releasetype>
+    <packagingtype>zip</packagingtype>
+    <mupspecificationversion>2.4.3</mupspecificationversion>
+    <supportedoperatingsystems>
+        <osidentifier name="Windows10" architecture="x64" />
+    </supportedoperatingsystems>
+  <content>
+            <Device componentID="105126">        
+                <Image type="APP" version="4.7.10.0">
+                    <file>setup.exe</file>
+                </Image>
+            </Device>
+            <Device componentID="105127">        
+                <Image type="APP" version="4.7.10.0">
+                    <file>setup.exe</file>
+                </Image>
+            </Device>
+            <Device componentID="105128">        
+                <Image type="APP" version="4.7.10.0">
+                    <file>setup.exe</file>
+                </Image>
+            </Device>   
+  </content>
+  </packageinformation>
+  <executable architecture="x64">
+    <executablename>setup.exe</executablename>
+  </executable>
+  <behaviors>
+    <behavior name="unattended">
+      <vendoroption>
+        <optionvalue requiresvalue="false" switch="/">s</optionvalue>
+      </vendoroption>
+    </behavior>
+    <behavior name="attended"></behavior>
+  </behaviors>
+  <parameters>
+    <parametermapping name="logfile">
+      <vendoroption>
+        <container>
+          <containervalue switch="/" requiresvalue="false" valuedelimiter="">Verbose</containervalue>
+          <optionvalue switch="" requiresvalue="true" valuedelimiter="" enclose="&quot;"></optionvalue>
+        </container>
+      </vendoroption>
+    </parametermapping>
+  </parameters>
+  <returncodes>
+    <returncodemapping name="SUCCESS">
+      <vendorreturncode>0</vendorreturncode>
+    </returncodemapping>
+    <returncodemapping name="ERROR">
+      <vendorreturncode>1603</vendorreturncode>
+    </returncodemapping>
+    <returncodemapping name="UNKNOWN_OPTION">
+      <vendorreturncode>1203</vendorreturncode>
+    </returncodemapping>
+    <returncodemapping name="REBOOT_REQUIRED">
+      <vendorreturncode>3010</vendorreturncode>
+    </returncodemapping>
+    <returncodemapping name="ERROR_INSTALL_PLATFORM_UNSUPPORTED">
+      <vendorreturncode>1633</vendorreturncode>
+    </returncodemapping>
+  </returncodes>
+  <inventorymetadata>
+    <fullpackageidentifier>
+      <msis>
+        <msi componentID="105126" >
+          <upgradecode>{8DB08EF6-8101-43C3-A4D2-BB397EAF0BCD}</upgradecode>
+          <version>4.7.10.0</version>
+        </msi>
+        <msi componentID="105127" >
+          <upgradecode>{8DB08EF6-8101-43C3-A4D2-BB397EAF0BCD}</upgradecode>
+          <version>4.7.10.0</version>
+        </msi>
+        <msi componentID="105128" >
+          <upgradecode>{8DB08EF6-8101-43C3-A4D2-BB397EAF0BCD}</upgradecode>
+          <version>4.7.10.0</version>
+        </msi>
+        
+        
+      </msis>
+    </fullpackageidentifier>
+  </inventorymetadata>
+</MUPDefinition>

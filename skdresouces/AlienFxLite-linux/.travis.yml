@@ -1,0 +1,26 @@
+language: java
+jdk:
+  - oraclejdk8
+  - oraclejdk7
+  - openjdk7
+
+sudo: false
+
+addons:
+  apt:
+    packages:
+      - libusb-1.0-0-dev
+
+branches:
+  only:
+    - master
+    - travis
+
+script:
+  - javac -version
+  - mkdir build && cd build
+  - cmake .. -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/tmp
+  - make
+  - make install
+  - jar tf /tmp/share/alienfx-lite/AlienFX.jar
+  - cat /tmp/bin/alienfx-lite

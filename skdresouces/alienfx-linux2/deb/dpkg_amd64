@@ -1,0 +1,20 @@
+Source: alienfx
+Section: misc
+Priority: optional
+Homepage: http://a0z.eu/alienfx/
+Standards-Version: 3.9.2
+
+Package: alienfx
+Version: 1.0
+Maintainer: Simon Tibble <simon@tibble.net>
+Depends: libusb-1.0-0
+Architecture: amd64
+Readme: ../README
+Files: ../alienfx /usr/bin/
+ ../alienfx.1 /usr/share/man/man1/
+Description: Alienware AlienFX Light Manipulation Program
+ The AlienFX feature is available on some AlienWare computers. This program
+ enables the ability to change the lights to any RGB value and also to turn
+ the lights off completely.  A 4096-colour RGB palette is supported with
+ commands to Morph between colours, blinking and fixed colours.  Multiple
+ lightchip models are known and supported.

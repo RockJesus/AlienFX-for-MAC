@@ -1,0 +1,192 @@
+'\" t
+.\"     Title: alienfx
+.\"    Author: Simon Tibble <simon@tibble.net>
+.\" Generator: text editor
+.\"      Date: 29/05/2012
+.\"    Manual: alienfx
+.\"    Source: https://github.com/tibz/alienfx
+.\"  Language: English
+.\"
+.TH "ALIENFX" "1" "29/05/2012" "AlienFX GNU/LINUX" "alienfx"
+.ie \n(.g .ds Aq \(aq
+.el       .ds Aq '
+.\" disable hyphenation
+.nh
+.\" disable justification (adjust text to left margin only)
+.ad l
+.SH "NAME"
+alienfx \- Change the configuration of AlienFX lightchip control on AlienWare hardware
+.SH "SYNOPSIS"
+.HP \w'\fBalienfx\fR\ 'u
+\fBalienfx\fR [\fB\-c\fR \fIZnnmrgb\fR[\fIrgb\fR]...] [\fB\-d\fR \fInumber\fR] [\fB\-P\fR \fIhex\fR] [\fB\-r\fR] [\fB\-R\fR] [\fB\-s\fR] [\fB\-t\fR \fInumber\fR] [\fB\-u\fR] [\fB\-v\fR]
+.PP
+\fBalienfx \-p\fR \fInumber\fR [\fB-u\fR] [\fB-v\fR]
+.PP
+\fBalienfx [\fB-u\fR] [\fB-v\fR] \-X\fR \fInum num num num num num num num num\fR
+.PP
+\fBalienfx \-h\fR
+.SH "DESCRIPTION"
+.PP
+\fBalienfx\fR sets the internal data structure given on the command line into the AlienFX lighting chip embedded into AlienWare hardware.
+.PP
+Write permission is required to the internal USB port; you can either run the program as root using \fBsu\fR(1) or \fBsudo\fR(8) or you can configure access to the USB-subsystem with \fBudev\fR(7) for the user invoking the program.
+.PP
+This version of \fBalienfx\fR can write to multiple chip types (auto-detection), has individual zoning support and a 4096 colour RGB-spectrum.
+.PP
+If \fBalienfx\fR is called with no arguments all the lights are turned off.
+.SH "OPTIONS"
+.PP
+\fB\-c\fR \fIZnnmrgb[rgb]...]\fR  (Default: Z00F000)
+.RS 4
+Colour command.  This option specifies the ZONE affected, the MODE to be used, the primary RGB colour to be set and the secondary RGB colour to be set that you want included in this command.  Case insensitive.
+.PP
+ZONE is 2-digit integer between 00 and 27.  There are 27 possible zones, according to AlienFX SDK documentation.  Specify the zone number to indicate which zone the colour will be set for.  Setting this to 00 indicates the colour command will be set for all zones.  The default is to set colour for all zones.  Each lightchip is different due to changes between AlienWare hardware revisions, so experiment with your own zone numbers to find your specific zones if you want to set lights individually.
+.PP
+MODE is a single digit of either B, F or M which are Blink, Fixed or Morph respectively.  This will affect how the RGB value(s) are used.
+.PP
+RGB value is 3-single digit hex.  For example, solid red is F00, solid green is 0F0 and solid blue is 00F.  For secondary colours, used by morph only, place the two side-by-side as in the example below.  The default colours are 000 for both primary and secondary RGB values.
+.RE
+.PP
+\fB\-d\fR \fInum\fR
+.RS 4
+Set the delay between morph/flash increments.  Number between 1 and 6000, the smaller the faster.
+.RE
+.PP
+\fB\-h\fR
+.RS 4
+Display helpful command line usage information.
+.RE
+.PP
+\fB\-p\fR \fInum\fR
+.RS 4
+Predefined colour presets.  These apply by default to all zones.  To see a list use "-p 0".  The preset list includes the colour command used by each preset.
+.RE
+.PP
+\fB\-P\fR \fIhex\fR
+.RS 4
+When attempting to set the chip data, use this specified \fIproductID\fR in hexadecimal.  You can learn your particular ProductID from the \fBlsusb\fR(8) command.  Look for the device mentioned as "AlienWare", it should have a VendorID of "187c".  By default, \fBalienfx\fR will attempt to access ProductID's 0511, 0512, 0513, 0514 and 0522.
+.RE
+.PP
+\fB\-r\fR
+.RS 4
+Reset the lightchip before sending colour information.
+.RE
+.PP
+\fB\-R\fR
+.RS 4
+Reboots the lightchip, as if the power had been turned off then back on again.
+.RE
+.PP
+\fB\-s\fR \fInum\fR
+.RS 4
+Save the colour commands into the lightchip EEPROM for the specified powerblock.  Some powerblocks are:
+.RS 4
+0  ...  Current power mode
+.RE
+.RS 4
+1  ...  Load on boot / power on
+.RE
+.RS 4
+5  ...  Mains AC
+.RE
+.RS 4
+6  ...  Charging
+.RE
+.RS 4
+7  ...  On Battery (Low)
+.RE
+.RS 4
+8  ...  On Battery
+.RE
+If you are saving the \fBalienfx\fR calls into a shell script it is best to run the command with powerblock 0 and then powerblock 1.
+.RE
+.PP
+\fB\-t\fR \fInum\fR
+.RS 4
+Set the delay between USB interactions with the lightchip.  Number between 1 and 100, one hundred being the slowest.  Some models of lightchip need longer delays than others; the default is about 135msec, this value multiplies that.  (According to AlienFX documentation, the lightchip will ignore commands which are closer than 250msec apart.)
+.RE
+.PP
+\fB\-u\fR
+.RS 4
+Produces USB diagnostic output to stdout.
+.RE
+.PP
+\fB\-v\fR
+.RS 4
+Verbose output to stdout so you can see what is happening.
+.RE
+.PP
+\fB\-X\fR \fIn n n n n n n n n\fR
+.RS 4
+Raw USB command mode.  Useful for debugging or direct chip access.  Expects nine integer values between 0 and 255.
+.RE
+.PP
+.SH "EXAMPLES"
+.PP
+alienfx \-v \-c z00ff00
+.RS 4
+Turn all lights fixed on bright red and show us messages as it happens.
+.RE
+.PP
+alienfx \-c z04f0f0
+.RS 4
+Turn light zone 4 fixed to bright green.
+.RE
+.PP
+alienfx \-c z10ff00z12bfff
+.RS 4
+Turn light zone 10 fixed to bright read and zone 12 blinking white.
+.RE
+.PP
+alienfx \-r \-c z00ff0f
+.RS 4
+Reset the lightchip, then turn light all zones fixed to bright pink.
+.RE
+.PP
+alienfx \-p 0514 \-c z00m0ffff0
+.RS 4
+Turn all lights morph between bright cyan and bright yellow, with lightchip USB ProductID 0514.
+.RE
+.PP
+alienfx \-c z00mf000f0m0f000fm00ff00
+.RS 4
+Turn all lights morph between bright red then bright green then bright blue then bright red again.
+.RE
+.PP
+alienfx
+.RS 4
+Turn lights off.
+.RE
+.SH "COMPATIBILITY"
+.PP
+Due to testing limitations, this program may not work on your specific hardware without tweaking.  However, many models have been programmed for including:
+.RS 4
+AlienWare M11X R1/R2/R3 Laptops
+.RE
+.RS 4
+AlienWare M15X Laptop
+.RE
+.RS 4
+AlienWare M17X Laptop
+.RE
+.RS 4
+AlienWare AREA51
+.RE
+.RS 4
+AlienWare Aurora (non-ALX)
+.RE
+.RS 4
+Compatibility-mode
+.RE
+.PP
+The lightchip only allow RGB colour values which are divisible by 16.  This leads to 4096 possible colour combinations.
+.PP
+Currently, the flashing colour option is not completely functional.
+.PP
+Some times the lightchip becomes unresponsive.  If this happens to you, reset the lightchip by running \fBalienfx\fR with no arguments.  If it is still unresponsive, try \fBalienfx -R\fR to reboot the chip, and if it is still not co-operating then completely power-cycle your hardware.
+.SH "SEE ALSO"
+.PP
+\fBlsusb\fR(8), \fBsu\fR(1), \fBsudo\fR(8), \fBudev\fR(7)
+.SH "AUTHOR"
+.PP
+Simon Tibble <simon@tibble.net> https://github.com/tibz/alienfx

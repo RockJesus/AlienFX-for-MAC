@@ -1,0 +1,1473 @@
+<?xml version="1.0" standalone="yes"?>
+<ThemeDataset xmlns="http://tempuri.org/ThemeDataset.xsd">
+  <xs:schema id="ThemeDataset" targetNamespace="http://tempuri.org/ThemeDataset.xsd" xmlns:mstns="http://tempuri.org/ThemeDataset.xsd" xmlns="http://tempuri.org/ThemeDataset.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" attributeFormDefault="qualified" elementFormDefault="qualified">
+    <xs:element name="ThemeDataset" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="Actions">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="ZoneID" type="xs:int" />
+                <xs:element name="ActionID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="1" type="xs:int" />
+                <xs:element name="ActionTypeID" type="xs:int" />
+                <xs:element name="Color1">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="9" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="Color2">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="9" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="Duration" type="xs:int" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="ZonesGroups">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="ZoneID" type="xs:int" />
+                <xs:element name="GroupID" type="xs:int" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="ActionTypes">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="ActionTypeID" type="xs:int" />
+                <xs:element name="Name">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="20" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="PseudoAction" type="xs:boolean" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="Devices">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="DeviceID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="1" type="xs:int" />
+                <xs:element name="Description">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="30" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="DeviceTypeID" type="xs:int" />
+                <xs:element name="PID">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="50" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="Model">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="20" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="CompatibleSystem">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="400" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="ActionsPerZones" type="xs:int" />
+                <xs:element name="VID" default="" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="50" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="DeviceTypes">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="DeviceTypeID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="1" type="xs:int" />
+                <xs:element name="Description">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="30" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="Groups">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="ID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="1" type="xs:int" />
+                <xs:element name="GroupID">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="20" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="Name">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="20" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="Leds">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="ID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="1" type="xs:int" />
+                <xs:element name="LedID" type="xs:int" />
+                <xs:element name="Name">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="20" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="Description">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="50" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="GroupID" type="xs:int" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="PseudoActionVisualization">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="ActionTypeID" type="xs:int" />
+                <xs:element name="VisualizationID" type="xs:int" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="Theme">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="ThemeID" type="xs:int" />
+                <xs:element name="Name">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="260" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="Version">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="20" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="Mode" type="xs:int" />
+                <xs:element name="ActionDuration" type="xs:decimal" default="3.0" />
+                <xs:element name="Tempo" type="xs:int" />
+                <xs:element name="ReadOnly" type="xs:boolean" default="false" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="Visualizations">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="VisualizationID" type="xs:int" />
+                <xs:element name="Name">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="50" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="VisualizationTypeID" type="xs:int" />
+                <xs:element name="ThemeID" type="xs:int" />
+                <xs:element name="ApplicationName">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="500" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="DeviceID" type="xs:int" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="VisualizationTypes">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="VisualizationTypeID" type="xs:int" />
+                <xs:element name="Name">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="50" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="Token" type="xs:int" />
+                <xs:element name="Hidden" type="xs:boolean" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="Zones">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="VisualizationID" type="xs:int" />
+                <xs:element name="ZoneID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="1" type="xs:int" />
+                <xs:element name="Name">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="50" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="Loop" type="xs:boolean" />
+                <xs:element name="Flags">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="4" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="Fixed" type="xs:boolean" />
+                <xs:element name="ID" type="xs:int" />
+                <xs:element name="FlagsUsedForReplication">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="4" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+      <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+        <xs:selector xpath=".//mstns:Actions" />
+        <xs:field xpath="mstns:ActionID" />
+      </xs:unique>
+      <xs:unique name="ZonesGroups_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+        <xs:selector xpath=".//mstns:ZonesGroups" />
+        <xs:field xpath="mstns:ZoneID" />
+        <xs:field xpath="mstns:GroupID" />
+      </xs:unique>
+      <xs:unique name="ActionTypes_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+        <xs:selector xpath=".//mstns:ActionTypes" />
+        <xs:field xpath="mstns:ActionTypeID" />
+      </xs:unique>
+      <xs:unique name="Devices_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+        <xs:selector xpath=".//mstns:Devices" />
+        <xs:field xpath="mstns:DeviceID" />
+      </xs:unique>
+      <xs:unique name="DeviceTypes_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+        <xs:selector xpath=".//mstns:DeviceTypes" />
+        <xs:field xpath="mstns:DeviceTypeID" />
+      </xs:unique>
+      <xs:unique name="Groups_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+        <xs:selector xpath=".//mstns:Groups" />
+        <xs:field xpath="mstns:ID" />
+      </xs:unique>
+      <xs:unique name="Leds_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+        <xs:selector xpath=".//mstns:Leds" />
+        <xs:field xpath="mstns:ID" />
+      </xs:unique>
+      <xs:unique name="PseudoActionVisualization_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+        <xs:selector xpath=".//mstns:PseudoActionVisualization" />
+        <xs:field xpath="mstns:ActionTypeID" />
+        <xs:field xpath="mstns:VisualizationID" />
+      </xs:unique>
+      <xs:unique name="Theme_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+        <xs:selector xpath=".//mstns:Theme" />
+        <xs:field xpath="mstns:ThemeID" />
+      </xs:unique>
+      <xs:unique name="Visualizations_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+        <xs:selector xpath=".//mstns:Visualizations" />
+        <xs:field xpath="mstns:VisualizationID" />
+      </xs:unique>
+      <xs:unique name="VisualizationTypes_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+        <xs:selector xpath=".//mstns:VisualizationTypes" />
+        <xs:field xpath="mstns:VisualizationTypeID" />
+      </xs:unique>
+      <xs:unique name="Zones_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+        <xs:selector xpath=".//mstns:Zones" />
+        <xs:field xpath="mstns:ZoneID" />
+      </xs:unique>
+    </xs:element>
+    <xs:annotation>
+      <xs:appinfo>
+        <msdata:Relationship name="Actions_ActionTypes" msdata:parent="ActionTypes" msdata:child="Actions" msdata:parentkey="ActionTypeID" msdata:childkey="ActionTypeID" />
+        <msdata:Relationship name="Actions_Zones" msdata:parent="Zones" msdata:child="Actions" msdata:parentkey="ZoneID" msdata:childkey="ZoneID" />
+        <msdata:Relationship name="ZonesGroups_Groups" msdata:parent="Groups" msdata:child="ZonesGroups" msdata:parentkey="ID" msdata:childkey="GroupID" />
+        <msdata:Relationship name="ZonesGroups_Zones" msdata:parent="Zones" msdata:child="ZonesGroups" msdata:parentkey="ZoneID" msdata:childkey="ZoneID" />
+        <msdata:Relationship name="FK_Devices_DeviceTypes" msdata:parent="DeviceTypes" msdata:child="Devices" msdata:parentkey="DeviceTypeID" msdata:childkey="DeviceTypeID" />
+        <msdata:Relationship name="Leds_Groups" msdata:parent="Groups" msdata:child="Leds" msdata:parentkey="ID" msdata:childkey="GroupID" />
+        <msdata:Relationship name="PseudoActionVisualization_ActionTypes" msdata:parent="ActionTypes" msdata:child="PseudoActionVisualization" msdata:parentkey="ActionTypeID" msdata:childkey="ActionTypeID" />
+        <msdata:Relationship name="PseudoActionVisualization_Visualizations" msdata:parent="Visualizations" msdata:child="PseudoActionVisualization" msdata:parentkey="VisualizationID" msdata:childkey="VisualizationID" />
+        <msdata:Relationship name="FK_Visualizations_Devices" msdata:parent="Devices" msdata:child="Visualizations" msdata:parentkey="DeviceID" msdata:childkey="DeviceID" />
+        <msdata:Relationship name="Visualizations_Theme" msdata:parent="Theme" msdata:child="Visualizations" msdata:parentkey="ThemeID" msdata:childkey="ThemeID" />
+        <msdata:Relationship name="Visualizations_VisualizationTypes" msdata:parent="VisualizationTypes" msdata:child="Visualizations" msdata:parentkey="VisualizationTypeID" msdata:childkey="VisualizationTypeID" />
+        <msdata:Relationship name="Zones_Visualizations" msdata:parent="Visualizations" msdata:child="Zones" msdata:parentkey="VisualizationID" msdata:childkey="VisualizationID" />
+      </xs:appinfo>
+    </xs:annotation>
+  </xs:schema>
+  <Actions>
+    <ZoneID>1</ZoneID>
+    <ActionID>1</ActionID>
+    <ActionTypeID>15</ActionTypeID>
+    <Color1>#FFF08000</Color1>
+    <Color2>#FFD0F000</Color2>
+    <Duration>2</Duration>
+  </Actions>
+  <Actions>
+    <ZoneID>2</ZoneID>
+    <ActionID>2</ActionID>
+    <ActionTypeID>3</ActionTypeID>
+    <Color1>#FF000000</Color1>
+    <Color2>#FF000000</Color2>
+    <Duration>0</Duration>
+  </Actions>
+  <Actions>
+    <ZoneID>2</ZoneID>
+    <ActionID>3</ActionID>
+    <ActionTypeID>3</ActionTypeID>
+    <Color1>#FF000000</Color1>
+    <Color2>#FF000000</Color2>
+    <Duration>0</Duration>
+  </Actions>
+  <Actions>
+    <ZoneID>2</ZoneID>
+    <ActionID>4</ActionID>
+    <ActionTypeID>1</ActionTypeID>
+    <Color1>#FF000000</Color1>
+    <Color2>#FFF00000</Color2>
+    <Duration>0</Duration>
+  </Actions>
+  <Actions>
+    <ZoneID>2</ZoneID>
+    <ActionID>5</ActionID>
+    <ActionTypeID>1</ActionTypeID>
+    <Color1>#FFF00000</Color1>
+    <Color2>#FF000000</Color2>
+    <Duration>0</Duration>
+  </Actions>
+  <Actions>
+    <ZoneID>2</ZoneID>
+    <ActionID>6</ActionID>
+    <ActionTypeID>3</ActionTypeID>
+    <Color1>#FF000000</Color1>
+    <Color2>#FF000000</Color2>
+    <Duration>1</Duration>
+  </Actions>
+  <Actions>
+    <ZoneID>2</ZoneID>
+    <ActionID>7</ActionID>
+    <ActionTypeID>1</ActionTypeID>
+    <Color1>#FFF00000</Color1>
+    <Color2>#FF000000</Color2>
+    <Duration>0</Duration>
+  </Actions>
+  <Actions>
+    <ZoneID>2</ZoneID>
+    <ActionID>8</ActionID>
+    <ActionTypeID>1</ActionTypeID>
+    <Color1>#FF000000</Color1>
+    <Color2>#FFF00000</Color2>
+    <Duration>0</Duration>
+  </Actions>
+  <Actions>
+    <ZoneID>3</ZoneID>
+    <ActionID>9</ActionID>
+    <ActionTypeID>1</ActionTypeID>
+    <Color1>#FF000000</Color1>
+    <Color2>#FFF00000</Color2>
+    <Duration>0</Duration>
+  </Actions>
+  <Actions>
+    <ZoneID>3</ZoneID>
+    <ActionID>10</ActionID>
+    <ActionTypeID>1</ActionTypeID>
+    <Color1>#FFF00000</Color1>
+    <Color2>#FF000000</Color2>
+    <Duration>0</Duration>
+  </Actions>
+  <Actions>
+    <ZoneID>3</ZoneID>
+    <ActionID>11</ActionID>
+    <ActionTypeID>3</ActionTypeID>
+    <Color1>#FF000000</Color1>
+    <Color2>#FF000000</Color2>
+    <Duration>1</Duration>
+  </Actions>
+  <Actions>
+    <ZoneID>3</ZoneID>
+    <ActionID>12</ActionID>
+    <ActionTypeID>1</ActionTypeID>
+    <Color1>#FFF00000</Color1>
+    <Color2>#FF000000</Color2>
+    <Duration>0</Duration>
+  </Actions>
+  <Actions>
+    <ZoneID>3</ZoneID>
+    <ActionID>13</ActionID>
+    <ActionTypeID>1</ActionTypeID>
+    <Color1>#FF000000</Color1>
+    <Color2>#FFF00000</Color2>
+    <Duration>0</Duration>
+  </Actions>
+  <Actions>
+    <ZoneID>3</ZoneID>
+    <ActionID>14</ActionID>
+    <ActionTypeID>3</ActionTypeID>
+    <Color1>#FF000000</Color1>
+    <Color2>#FF000000</Color2>
+    <Duration>1</Duration>
+  </Actions>
+  <Actions>
+    <ZoneID>4</ZoneID>
+    <ActionID>15</ActionID>
+    <ActionTypeID>1</ActionTypeID>
+    <Color1>#FFF00000</Color1>
+    <Color2>#FF000000</Color2>
+    <Duration>1</Duration>
+  </Actions>
+  <Actions>
+    <ZoneID>4</ZoneID>
+    <ActionID>16</ActionID>
+    <ActionTypeID>1</ActionTypeID>
+    <Color1>#FF000000</Color1>
+    <Color2>#FFF00000</Color2>
+    <Duration>0</Duration>
+  </Actions>
+  <Actions>
+    <ZoneID>4</ZoneID>
+    <ActionID>17</ActionID>
+    <ActionTypeID>1</ActionTypeID>
+    <Color1>#FF000000</Color1>
+    <Color2>#FFF00000</Color2>
+    <Duration>0</Duration>
+  </Actions>
+  <Actions>
+    <ZoneID>4</ZoneID>
+    <ActionID>18</ActionID>
+    <ActionTypeID>3</ActionTypeID>
+    <Color1>#FF000000</Color1>
+    <Color2>#FF000000</Color2>
+    <Duration>0</Duration>
+  </Actions>
+  <Actions>
+    <ZoneID>4</ZoneID>
+    <ActionID>19</ActionID>
+    <ActionTypeID>3</ActionTypeID>
+    <Color1>#FF000000</Color1>
+    <Color2>#FF000000</Color2>
+    <Duration>1</Duration>
+  </Actions>
+  <Actions>
+    <ZoneID>4</ZoneID>
+    <ActionID>20</ActionID>
+    <ActionTypeID>1</ActionTypeID>
+    <Color1>#FF000000</Color1>
+    <Color2>#FFF00000</Color2>
+    <Duration>0</Duration>
+  </Actions>
+  <Actions>
+    <ZoneID>5</ZoneID>
+    <ActionID>21</ActionID>
+    <ActionTypeID>3</ActionTypeID>
+    <Color1>#FF000000</Color1>
+    <Color2>#FF000000</Color2>
+    <Duration>0</Duration>
+  </Actions>
+  <Actions>
+    <ZoneID>5</ZoneID>
+    <ActionID>22</ActionID>
+    <ActionTypeID>1</ActionTypeID>
+    <Color1>#FF000000</Color1>
+    <Color2>#FFF00000</Color2>
+    <Duration>0</Duration>
+  </Actions>
+  <Actions>
+    <ZoneID>5</ZoneID>
+    <ActionID>23</ActionID>
+    <ActionTypeID>1</ActionTypeID>
+    <Color1>#FFF00000</Color1>
+    <Color2>#FF000000</Color2>
+    <Duration>1</Duration>
+  </Actions>
+  <Actions>
+    <ZoneID>5</ZoneID>
+    <ActionID>24</ActionID>
+    <ActionTypeID>1</ActionTypeID>
+    <Color1>#FF000000</Color1>
+    <Color2>#FFF00000</Color2>
+    <Duration>0</Duration>
+  </Actions>
+  <Actions>
+    <ZoneID>5</ZoneID>
+    <ActionID>25</ActionID>
+    <ActionTypeID>3</ActionTypeID>
+    <Color1>#FF000000</Color1>
+    <Color2>#FF000000</Color2>
+    <Duration>1</Duration>
+  </Actions>
+  <Actions>
+    <ZoneID>6</ZoneID>
+    <ActionID>26</ActionID>
+    <ActionTypeID>3</ActionTypeID>
+    <Color1>#FFF08000</Color1>
+    <Color2>#FF000000</Color2>
+    <Duration>0</Duration>
+  </Actions>
+  <Actions>
+    <ZoneID>7</ZoneID>
+    <ActionID>27</ActionID>
+    <ActionTypeID>3</ActionTypeID>
+    <Color1>#FFF00000</Color1>
+    <Color2>#FF000000</Color2>
+    <Duration>0</Duration>
+  </Actions>
+  <Actions>
+    <ZoneID>8</ZoneID>
+    <ActionID>28</ActionID>
+    <ActionTypeID>3</ActionTypeID>
+    <Color1>#FFF00000</Color1>
+    <Color2>#FF000000</Color2>
+    <Duration>0</Duration>
+  </Actions>
+  <Actions>
+    <ZoneID>9</ZoneID>
+    <ActionID>29</ActionID>
+    <ActionTypeID>3</ActionTypeID>
+    <Color1>#FFF00000</Color1>
+    <Color2>#FF000000</Color2>
+    <Duration>1</Duration>
+  </Actions>
+  <Actions>
+    <ZoneID>9</ZoneID>
+    <ActionID>30</ActionID>
+    <ActionTypeID>1</ActionTypeID>
+    <Color1>#FFF00000</Color1>
+    <Color2>#FF000000</Color2>
+    <Duration>0</Duration>
+  </Actions>
+  <Actions>
+    <ZoneID>9</ZoneID>
+    <ActionID>31</ActionID>
+    <ActionTypeID>1</ActionTypeID>
+    <Color1>#FF000000</Color1>
+    <Color2>#FFF00000</Color2>
+    <Duration>0</Duration>
+  </Actions>
+  <Actions>
+    <ZoneID>10</ZoneID>
+    <ActionID>32</ActionID>
+    <ActionTypeID>1</ActionTypeID>
+    <Color1>#FFF00000</Color1>
+    <Color2>#FF000000</Color2>
+    <Duration>0</Duration>
+  </Actions>
+  <Actions>
+    <ZoneID>10</ZoneID>
+    <ActionID>33</ActionID>
+    <ActionTypeID>3</ActionTypeID>
+    <Color1>#FF000000</Color1>
+    <Color2>#FF000000</Color2>
+    <Duration>1</Duration>
+  </Actions>
+  <Actions>
+    <ZoneID>10</ZoneID>
+    <ActionID>34</ActionID>
+    <ActionTypeID>1</ActionTypeID>
+    <Color1>#FF000000</Color1>
+    <Color2>#FFF00000</Color2>
+    <Duration>0</Duration>
+  </Actions>
+  <Actions>
+    <ZoneID>11</ZoneID>
+    <ActionID>35</ActionID>
+    <ActionTypeID>3</ActionTypeID>
+    <Color1>#FFF00000</Color1>
+    <Color2>#FF000000</Color2>
+    <Duration>1</Duration>
+  </Actions>
+  <Actions>
+    <ZoneID>11</ZoneID>
+    <ActionID>36</ActionID>
+    <ActionTypeID>1</ActionTypeID>
+    <Color1>#FFF00000</Color1>
+    <Color2>#FF000000</Color2>
+    <Duration>0</Duration>
+  </Actions>
+  <Actions>
+    <ZoneID>11</ZoneID>
+    <ActionID>37</ActionID>
+    <ActionTypeID>1</ActionTypeID>
+    <Color1>#FF000000</Color1>
+    <Color2>#FFF00000</Color2>
+    <Duration>0</Duration>
+  </Actions>
+  <Actions>
+    <ZoneID>12</ZoneID>
+    <ActionID>38</ActionID>
+    <ActionTypeID>1</ActionTypeID>
+    <Color1>#FFF00000</Color1>
+    <Color2>#FF000000</Color2>
+    <Duration>0</Duration>
+  </Actions>
+  <Actions>
+    <ZoneID>12</ZoneID>
+    <ActionID>39</ActionID>
+    <ActionTypeID>3</ActionTypeID>
+    <Color1>#FF000000</Color1>
+    <Color2>#FF000000</Color2>
+    <Duration>1</Duration>
+  </Actions>
+  <Actions>
+    <ZoneID>12</ZoneID>
+    <ActionID>40</ActionID>
+    <ActionTypeID>1</ActionTypeID>
+    <Color1>#FF000000</Color1>
+    <Color2>#FFF00000</Color2>
+    <Duration>0</Duration>
+  </Actions>
+  <Actions>
+    <ZoneID>13</ZoneID>
+    <ActionID>41</ActionID>
+    <ActionTypeID>1</ActionTypeID>
+    <Color1>#FFF08000</Color1>
+    <Color2>#FF000000</Color2>
+    <Duration>0</Duration>
+  </Actions>
+  <Actions>
+    <ZoneID>13</ZoneID>
+    <ActionID>42</ActionID>
+    <ActionTypeID>1</ActionTypeID>
+    <Color1>#FF000000</Color1>
+    <Color2>#FFF08000</Color2>
+    <Duration>0</Duration>
+  </Actions>
+  <Actions>
+    <ZoneID>26</ZoneID>
+    <ActionID>43</ActionID>
+    <ActionTypeID>3</ActionTypeID>
+    <Color1>#FFF08000</Color1>
+    <Color2>#FF000000</Color2>
+    <Duration>0</Duration>
+  </Actions>
+  <Actions>
+    <ZoneID>27</ZoneID>
+    <ActionID>44</ActionID>
+    <ActionTypeID>1</ActionTypeID>
+    <Color1>#FFF08000</Color1>
+    <Color2>#FFD0F000</Color2>
+    <Duration>0</Duration>
+  </Actions>
+  <Actions>
+    <ZoneID>27</ZoneID>
+    <ActionID>45</ActionID>
+    <ActionTypeID>1</ActionTypeID>
+    <Color1>#FFD0F000</Color1>
+    <Color2>#FFF08000</Color2>
+    <Duration>0</Duration>
+  </Actions>
+  <Actions>
+    <ZoneID>28</ZoneID>
+    <ActionID>46</ActionID>
+    <ActionTypeID>1</ActionTypeID>
+    <Color1>#FFD0F000</Color1>
+    <Color2>#FF000000</Color2>
+    <Duration>0</Duration>
+  </Actions>
+  <Actions>
+    <ZoneID>28</ZoneID>
+    <ActionID>47</ActionID>
+    <ActionTypeID>1</ActionTypeID>
+    <Color1>#FF000000</Color1>
+    <Color2>#FFD0F000</Color2>
+    <Duration>0</Duration>
+  </Actions>
+  <Actions>
+    <ZoneID>29</ZoneID>
+    <ActionID>48</ActionID>
+    <ActionTypeID>3</ActionTypeID>
+    <Color1>#FFD0F000</Color1>
+    <Color2>#FF000000</Color2>
+    <Duration>0</Duration>
+  </Actions>
+  <Actions>
+    <ZoneID>30</ZoneID>
+    <ActionID>49</ActionID>
+    <ActionTypeID>2</ActionTypeID>
+    <Color1>#FFD0F000</Color1>
+    <Color2>#FF000000</Color2>
+    <Duration>0</Duration>
+  </Actions>
+  <ZonesGroups>
+    <ZoneID>1</ZoneID>
+    <GroupID>8</GroupID>
+  </ZonesGroups>
+  <ZonesGroups>
+    <ZoneID>2</ZoneID>
+    <GroupID>1</GroupID>
+  </ZonesGroups>
+  <ZonesGroups>
+    <ZoneID>3</ZoneID>
+    <GroupID>2</GroupID>
+  </ZonesGroups>
+  <ZonesGroups>
+    <ZoneID>4</ZoneID>
+    <GroupID>3</GroupID>
+  </ZonesGroups>
+  <ZonesGroups>
+    <ZoneID>5</ZoneID>
+    <GroupID>4</GroupID>
+  </ZonesGroups>
+  <ZonesGroups>
+    <ZoneID>6</ZoneID>
+    <GroupID>5</GroupID>
+  </ZonesGroups>
+  <ZonesGroups>
+    <ZoneID>7</ZoneID>
+    <GroupID>6</GroupID>
+  </ZonesGroups>
+  <ZonesGroups>
+    <ZoneID>8</ZoneID>
+    <GroupID>7</GroupID>
+  </ZonesGroups>
+  <ZonesGroups>
+    <ZoneID>9</ZoneID>
+    <GroupID>10</GroupID>
+  </ZonesGroups>
+  <ZonesGroups>
+    <ZoneID>10</ZoneID>
+    <GroupID>11</GroupID>
+  </ZonesGroups>
+  <ZonesGroups>
+    <ZoneID>11</ZoneID>
+    <GroupID>12</GroupID>
+  </ZonesGroups>
+  <ZonesGroups>
+    <ZoneID>12</ZoneID>
+    <GroupID>13</GroupID>
+  </ZonesGroups>
+  <ZonesGroups>
+    <ZoneID>13</ZoneID>
+    <GroupID>8</GroupID>
+  </ZonesGroups>
+  <ZonesGroups>
+    <ZoneID>14</ZoneID>
+    <GroupID>8</GroupID>
+  </ZonesGroups>
+  <ZonesGroups>
+    <ZoneID>15</ZoneID>
+    <GroupID>1</GroupID>
+  </ZonesGroups>
+  <ZonesGroups>
+    <ZoneID>16</ZoneID>
+    <GroupID>2</GroupID>
+  </ZonesGroups>
+  <ZonesGroups>
+    <ZoneID>17</ZoneID>
+    <GroupID>3</GroupID>
+  </ZonesGroups>
+  <ZonesGroups>
+    <ZoneID>18</ZoneID>
+    <GroupID>4</GroupID>
+  </ZonesGroups>
+  <ZonesGroups>
+    <ZoneID>19</ZoneID>
+    <GroupID>5</GroupID>
+  </ZonesGroups>
+  <ZonesGroups>
+    <ZoneID>20</ZoneID>
+    <GroupID>6</GroupID>
+  </ZonesGroups>
+  <ZonesGroups>
+    <ZoneID>21</ZoneID>
+    <GroupID>7</GroupID>
+  </ZonesGroups>
+  <ZonesGroups>
+    <ZoneID>22</ZoneID>
+    <GroupID>10</GroupID>
+  </ZonesGroups>
+  <ZonesGroups>
+    <ZoneID>23</ZoneID>
+    <GroupID>11</GroupID>
+  </ZonesGroups>
+  <ZonesGroups>
+    <ZoneID>24</ZoneID>
+    <GroupID>12</GroupID>
+  </ZonesGroups>
+  <ZonesGroups>
+    <ZoneID>25</ZoneID>
+    <GroupID>13</GroupID>
+  </ZonesGroups>
+  <ZonesGroups>
+    <ZoneID>26</ZoneID>
+    <GroupID>8</GroupID>
+  </ZonesGroups>
+  <ZonesGroups>
+    <ZoneID>27</ZoneID>
+    <GroupID>8</GroupID>
+  </ZonesGroups>
+  <ZonesGroups>
+    <ZoneID>28</ZoneID>
+    <GroupID>8</GroupID>
+  </ZonesGroups>
+  <ZonesGroups>
+    <ZoneID>29</ZoneID>
+    <GroupID>8</GroupID>
+  </ZonesGroups>
+  <ZonesGroups>
+    <ZoneID>30</ZoneID>
+    <GroupID>8</GroupID>
+  </ZonesGroups>
+  <ActionTypes>
+    <ActionTypeID>1</ActionTypeID>
+    <Name>Morph</Name>
+    <PseudoAction>false</PseudoAction>
+  </ActionTypes>
+  <ActionTypes>
+    <ActionTypeID>2</ActionTypeID>
+    <Name>Pulse</Name>
+    <PseudoAction>false</PseudoAction>
+  </ActionTypes>
+  <ActionTypes>
+    <ActionTypeID>3</ActionTypeID>
+    <Name>SetColor</Name>
+    <PseudoAction>false</PseudoAction>
+  </ActionTypes>
+  <ActionTypes>
+    <ActionTypeID>4</ActionTypeID>
+    <Name>Loop</Name>
+    <PseudoAction>false</PseudoAction>
+  </ActionTypes>
+  <ActionTypes>
+    <ActionTypeID>15</ActionTypeID>
+    <Name>PlayPowerStatus</Name>
+    <PseudoAction>true</PseudoAction>
+  </ActionTypes>
+  <Devices>
+    <DeviceID>1</DeviceID>
+    <Description>Alienware 17 Chassis</Description>
+    <DeviceTypeID>1</DeviceTypeID>
+    <PID>0530</PID>
+    <Model>Alienware17R4</Model>
+    <CompatibleSystem />
+    <ActionsPerZones>0</ActionsPerZones>
+    <VID>187C</VID>
+  </Devices>
+  <DeviceTypes>
+    <DeviceTypeID>1</DeviceTypeID>
+    <Description>Chassis</Description>
+  </DeviceTypes>
+  <DeviceTypes>
+    <DeviceTypeID>2</DeviceTypeID>
+    <Description>Mouse</Description>
+  </DeviceTypes>
+  <DeviceTypes>
+    <DeviceTypeID>3</DeviceTypeID>
+    <Description>Keyboard</Description>
+  </DeviceTypes>
+  <Groups>
+    <ID>1</ID>
+    <GroupID>Group01</GroupID>
+    <Name>Keyboard Left</Name>
+  </Groups>
+  <Groups>
+    <ID>2</ID>
+    <GroupID>Group02</GroupID>
+    <Name>Keyboard MiddleLeft</Name>
+  </Groups>
+  <Groups>
+    <ID>3</ID>
+    <GroupID>Group03</GroupID>
+    <Name>Keyboard MiddleRight</Name>
+  </Groups>
+  <Groups>
+    <ID>4</ID>
+    <GroupID>Group04</GroupID>
+    <Name>Keyboard Right</Name>
+  </Groups>
+  <Groups>
+    <ID>5</ID>
+    <GroupID>Group05</GroupID>
+    <Name>Alienhead</Name>
+  </Groups>
+  <Groups>
+    <ID>6</ID>
+    <GroupID>Group06</GroupID>
+    <Name>Logo</Name>
+  </Groups>
+  <Groups>
+    <ID>7</ID>
+    <GroupID>Group07</GroupID>
+    <Name>Touchpad</Name>
+  </Groups>
+  <Groups>
+    <ID>8</ID>
+    <GroupID>Group08</GroupID>
+    <Name>Power</Name>
+  </Groups>
+  <Groups>
+    <ID>10</ID>
+    <GroupID>Group10</GroupID>
+    <Name>Tron Left</Name>
+  </Groups>
+  <Groups>
+    <ID>11</ID>
+    <GroupID>Group11</GroupID>
+    <Name>Tron Right</Name>
+  </Groups>
+  <Groups>
+    <ID>12</ID>
+    <GroupID>Group12</GroupID>
+    <Name>LCD Panel Left</Name>
+  </Groups>
+  <Groups>
+    <ID>13</ID>
+    <GroupID>Group13</GroupID>
+    <Name>LCD Panel Right</Name>
+  </Groups>
+  <Groups>
+    <ID>14</ID>
+    <GroupID>Group01</GroupID>
+    <Name>Ligths</Name>
+  </Groups>
+  <Leds>
+    <ID>1</ID>
+    <LedID>0</LedID>
+    <Name>Led 0</Name>
+    <Description>Keyboard Right</Description>
+    <GroupID>4</GroupID>
+  </Leds>
+  <Leds>
+    <ID>2</ID>
+    <LedID>1</LedID>
+    <Name>Led 1</Name>
+    <Description>Keyboard MiddleRight</Description>
+    <GroupID>3</GroupID>
+  </Leds>
+  <Leds>
+    <ID>3</ID>
+    <LedID>2</LedID>
+    <Name>Led 2</Name>
+    <Description>Keyboard MiddleLeft</Description>
+    <GroupID>2</GroupID>
+  </Leds>
+  <Leds>
+    <ID>4</ID>
+    <LedID>3</LedID>
+    <Name>Led 3</Name>
+    <Description>Keyboard Left</Description>
+    <GroupID>1</GroupID>
+  </Leds>
+  <Leds>
+    <ID>5</ID>
+    <LedID>5</LedID>
+    <Name>Led 5</Name>
+    <Description>Alienhead</Description>
+    <GroupID>5</GroupID>
+  </Leds>
+  <Leds>
+    <ID>6</ID>
+    <LedID>6</LedID>
+    <Name>Led 6</Name>
+    <Description>Logo</Description>
+    <GroupID>6</GroupID>
+  </Leds>
+  <Leds>
+    <ID>7</ID>
+    <LedID>7</LedID>
+    <Name>Led 7</Name>
+    <Description>Touchpad</Description>
+    <GroupID>7</GroupID>
+  </Leds>
+  <Leds>
+    <ID>8</ID>
+    <LedID>8</LedID>
+    <Name>Led 8</Name>
+    <Description>Power LED</Description>
+    <GroupID>8</GroupID>
+  </Leds>
+  <Leds>
+    <ID>10</ID>
+    <LedID>10</LedID>
+    <Name>Led 10</Name>
+    <Description>Tron Left</Description>
+    <GroupID>10</GroupID>
+  </Leds>
+  <Leds>
+    <ID>11</ID>
+    <LedID>11</LedID>
+    <Name>Led 11</Name>
+    <Description>Tron Right</Description>
+    <GroupID>11</GroupID>
+  </Leds>
+  <Leds>
+    <ID>12</ID>
+    <LedID>12</LedID>
+    <Name>Led 12</Name>
+    <Description>LDC Panel Left</Description>
+    <GroupID>12</GroupID>
+  </Leds>
+  <Leds>
+    <ID>13</ID>
+    <LedID>13</LedID>
+    <Name>Led 13</Name>
+    <Description>LDC Panel Right</Description>
+    <GroupID>13</GroupID>
+  </Leds>
+  <Leds>
+    <ID>14</ID>
+    <LedID>0</LedID>
+    <Name>Led 0</Name>
+    <Description>Lights</Description>
+    <GroupID>14</GroupID>
+  </Leds>
+  <Theme>
+    <ThemeID>1</ThemeID>
+    <Name>Advanced - Engage</Name>
+    <Version>2.0.0.0</Version>
+    <Mode>1</Mode>
+    <ActionDuration>3</ActionDuration>
+    <Tempo>200</Tempo>
+    <ReadOnly>false</ReadOnly>
+  </Theme>
+  <Visualizations>
+    <VisualizationID>1</VisualizationID>
+    <Name>Default</Name>
+    <VisualizationTypeID>1</VisualizationTypeID>
+    <ThemeID>1</ThemeID>
+    <ApplicationName />
+    <DeviceID>1</DeviceID>
+  </Visualizations>
+  <Visualizations>
+    <VisualizationID>2</VisualizationID>
+    <Name>AC Sleep Mode</Name>
+    <VisualizationTypeID>2</VisualizationTypeID>
+    <ThemeID>1</ThemeID>
+    <ApplicationName />
+    <DeviceID>1</DeviceID>
+  </Visualizations>
+  <Visualizations>
+    <VisualizationID>10</VisualizationID>
+    <Name>New Email</Name>
+    <VisualizationTypeID>3</VisualizationTypeID>
+    <ThemeID>1</ThemeID>
+    <ApplicationName />
+    <DeviceID>1</DeviceID>
+  </Visualizations>
+  <Visualizations>
+    <VisualizationID>5</VisualizationID>
+    <Name>AC Fully Charge Mode</Name>
+    <VisualizationTypeID>5</VisualizationTypeID>
+    <ThemeID>1</ThemeID>
+    <ApplicationName />
+    <DeviceID>1</DeviceID>
+  </Visualizations>
+  <Visualizations>
+    <VisualizationID>6</VisualizationID>
+    <Name>AC Charging Mode</Name>
+    <VisualizationTypeID>6</VisualizationTypeID>
+    <ThemeID>1</ThemeID>
+    <ApplicationName />
+    <DeviceID>1</DeviceID>
+  </Visualizations>
+  <Visualizations>
+    <VisualizationID>7</VisualizationID>
+    <Name>DC Sleep Mode</Name>
+    <VisualizationTypeID>7</VisualizationTypeID>
+    <ThemeID>1</ThemeID>
+    <ApplicationName />
+    <DeviceID>1</DeviceID>
+  </Visualizations>
+  <Visualizations>
+    <VisualizationID>8</VisualizationID>
+    <Name>DC Working Mode</Name>
+    <VisualizationTypeID>8</VisualizationTypeID>
+    <ThemeID>1</ThemeID>
+    <ApplicationName />
+    <DeviceID>1</DeviceID>
+  </Visualizations>
+  <Visualizations>
+    <VisualizationID>9</VisualizationID>
+    <Name>DC Low Battery State</Name>
+    <VisualizationTypeID>9</VisualizationTypeID>
+    <ThemeID>1</ThemeID>
+    <ApplicationName />
+    <DeviceID>1</DeviceID>
+  </Visualizations>
+  <VisualizationTypes>
+    <VisualizationTypeID>1</VisualizationTypeID>
+    <Name>Default</Name>
+    <Token>1</Token>
+    <Hidden>false</Hidden>
+  </VisualizationTypes>
+  <VisualizationTypes>
+    <VisualizationTypeID>2</VisualizationTypeID>
+    <Name>AC Sleep Mode</Name>
+    <Token>2</Token>
+    <Hidden>true</Hidden>
+  </VisualizationTypes>
+  <VisualizationTypes>
+    <VisualizationTypeID>3</VisualizationTypeID>
+    <Name>New Email</Name>
+    <Token>0</Token>
+    <Hidden>false</Hidden>
+  </VisualizationTypes>
+  <VisualizationTypes>
+    <VisualizationTypeID>4</VisualizationTypeID>
+    <Name>Applications</Name>
+    <Token>0</Token>
+    <Hidden>false</Hidden>
+  </VisualizationTypes>
+  <VisualizationTypes>
+    <VisualizationTypeID>5</VisualizationTypeID>
+    <Name>AC Fully Charge Mode</Name>
+    <Token>5</Token>
+    <Hidden>true</Hidden>
+  </VisualizationTypes>
+  <VisualizationTypes>
+    <VisualizationTypeID>6</VisualizationTypeID>
+    <Name>AC Charging Mode</Name>
+    <Token>6</Token>
+    <Hidden>true</Hidden>
+  </VisualizationTypes>
+  <VisualizationTypes>
+    <VisualizationTypeID>7</VisualizationTypeID>
+    <Name>DC Sleep Mode</Name>
+    <Token>7</Token>
+    <Hidden>true</Hidden>
+  </VisualizationTypes>
+  <VisualizationTypes>
+    <VisualizationTypeID>8</VisualizationTypeID>
+    <Name>DC Working Mode</Name>
+    <Token>8</Token>
+    <Hidden>true</Hidden>
+  </VisualizationTypes>
+  <VisualizationTypes>
+    <VisualizationTypeID>9</VisualizationTypeID>
+    <Name>DC Low Battery State</Name>
+    <Token>9</Token>
+    <Hidden>true</Hidden>
+  </VisualizationTypes>
+  <Zones>
+    <VisualizationID>1</VisualizationID>
+    <ZoneID>1</ZoneID>
+    <Name>1</Name>
+    <Loop>false</Loop>
+    <Flags>8004</Flags>
+    <Fixed>true</Fixed>
+    <ID>1</ID>
+    <FlagsUsedForReplication>8000</FlagsUsedForReplication>
+  </Zones>
+  <Zones>
+    <VisualizationID>1</VisualizationID>
+    <ZoneID>2</ZoneID>
+    <Name>2</Name>
+    <Loop>true</Loop>
+    <Flags>007F</Flags>
+    <Fixed>false</Fixed>
+    <ID>2</ID>
+    <FlagsUsedForReplication>007F</FlagsUsedForReplication>
+  </Zones>
+  <Zones>
+    <VisualizationID>1</VisualizationID>
+    <ZoneID>3</ZoneID>
+    <Name>3</Name>
+    <Loop>true</Loop>
+    <Flags>007F</Flags>
+    <Fixed>false</Fixed>
+    <ID>3</ID>
+    <FlagsUsedForReplication>007F</FlagsUsedForReplication>
+  </Zones>
+  <Zones>
+    <VisualizationID>1</VisualizationID>
+    <ZoneID>4</ZoneID>
+    <Name>4</Name>
+    <Loop>true</Loop>
+    <Flags>007F</Flags>
+    <Fixed>false</Fixed>
+    <ID>4</ID>
+    <FlagsUsedForReplication>007F</FlagsUsedForReplication>
+  </Zones>
+  <Zones>
+    <VisualizationID>1</VisualizationID>
+    <ZoneID>5</ZoneID>
+    <Name>5</Name>
+    <Loop>true</Loop>
+    <Flags>007F</Flags>
+    <Fixed>false</Fixed>
+    <ID>5</ID>
+    <FlagsUsedForReplication>007F</FlagsUsedForReplication>
+  </Zones>
+  <Zones>
+    <VisualizationID>1</VisualizationID>
+    <ZoneID>6</ZoneID>
+    <Name>6</Name>
+    <Loop>true</Loop>
+    <Flags>007F</Flags>
+    <Fixed>false</Fixed>
+    <ID>6</ID>
+    <FlagsUsedForReplication>007F</FlagsUsedForReplication>
+  </Zones>
+  <Zones>
+    <VisualizationID>1</VisualizationID>
+    <ZoneID>7</ZoneID>
+    <Name>7</Name>
+    <Loop>true</Loop>
+    <Flags>007F</Flags>
+    <Fixed>false</Fixed>
+    <ID>7</ID>
+    <FlagsUsedForReplication>007F</FlagsUsedForReplication>
+  </Zones>
+  <Zones>
+    <VisualizationID>1</VisualizationID>
+    <ZoneID>8</ZoneID>
+    <Name>8</Name>
+    <Loop>true</Loop>
+    <Flags>007F</Flags>
+    <Fixed>false</Fixed>
+    <ID>8</ID>
+    <FlagsUsedForReplication>007F</FlagsUsedForReplication>
+  </Zones>
+  <Zones>
+    <VisualizationID>1</VisualizationID>
+    <ZoneID>9</ZoneID>
+    <Name>9</Name>
+    <Loop>true</Loop>
+    <Flags>007F</Flags>
+    <Fixed>false</Fixed>
+    <ID>9</ID>
+    <FlagsUsedForReplication>007F</FlagsUsedForReplication>
+  </Zones>
+  <Zones>
+    <VisualizationID>1</VisualizationID>
+    <ZoneID>10</ZoneID>
+    <Name>10</Name>
+    <Loop>true</Loop>
+    <Flags>007F</Flags>
+    <Fixed>false</Fixed>
+    <ID>10</ID>
+    <FlagsUsedForReplication>007F</FlagsUsedForReplication>
+  </Zones>
+  <Zones>
+    <VisualizationID>1</VisualizationID>
+    <ZoneID>11</ZoneID>
+    <Name>11</Name>
+    <Loop>true</Loop>
+    <Flags>007F</Flags>
+    <Fixed>false</Fixed>
+    <ID>11</ID>
+    <FlagsUsedForReplication>007F</FlagsUsedForReplication>
+  </Zones>
+  <Zones>
+    <VisualizationID>1</VisualizationID>
+    <ZoneID>12</ZoneID>
+    <Name>12</Name>
+    <Loop>true</Loop>
+    <Flags>007F</Flags>
+    <Fixed>false</Fixed>
+    <ID>12</ID>
+    <FlagsUsedForReplication>007F</FlagsUsedForReplication>
+  </Zones>
+  <Zones>
+    <VisualizationID>2</VisualizationID>
+    <ZoneID>13</ZoneID>
+    <Name>1</Name>
+    <Loop>true</Loop>
+    <Flags>0000</Flags>
+    <Fixed>true</Fixed>
+    <ID>1</ID>
+    <FlagsUsedForReplication>0000</FlagsUsedForReplication>
+  </Zones>
+  <Zones>
+    <VisualizationID>10</VisualizationID>
+    <ZoneID>14</ZoneID>
+    <Name>1</Name>
+    <Loop>false</Loop>
+    <Flags>8000</Flags>
+    <Fixed>true</Fixed>
+    <ID>1</ID>
+    <FlagsUsedForReplication>0000</FlagsUsedForReplication>
+  </Zones>
+  <Zones>
+    <VisualizationID>10</VisualizationID>
+    <ZoneID>15</ZoneID>
+    <Name>2</Name>
+    <Loop>false</Loop>
+    <Flags>007F</Flags>
+    <Fixed>false</Fixed>
+    <ID>2</ID>
+    <FlagsUsedForReplication>0000</FlagsUsedForReplication>
+  </Zones>
+  <Zones>
+    <VisualizationID>10</VisualizationID>
+    <ZoneID>16</ZoneID>
+    <Name>3</Name>
+    <Loop>false</Loop>
+    <Flags>007F</Flags>
+    <Fixed>false</Fixed>
+    <ID>3</ID>
+    <FlagsUsedForReplication>0000</FlagsUsedForReplication>
+  </Zones>
+  <Zones>
+    <VisualizationID>10</VisualizationID>
+    <ZoneID>17</ZoneID>
+    <Name>4</Name>
+    <Loop>false</Loop>
+    <Flags>007F</Flags>
+    <Fixed>false</Fixed>
+    <ID>4</ID>
+    <FlagsUsedForReplication>0000</FlagsUsedForReplication>
+  </Zones>
+  <Zones>
+    <VisualizationID>10</VisualizationID>
+    <ZoneID>18</ZoneID>
+    <Name>5</Name>
+    <Loop>false</Loop>
+    <Flags>007F</Flags>
+    <Fixed>false</Fixed>
+    <ID>5</ID>
+    <FlagsUsedForReplication>0000</FlagsUsedForReplication>
+  </Zones>
+  <Zones>
+    <VisualizationID>10</VisualizationID>
+    <ZoneID>19</ZoneID>
+    <Name>6</Name>
+    <Loop>false</Loop>
+    <Flags>007F</Flags>
+    <Fixed>false</Fixed>
+    <ID>6</ID>
+    <FlagsUsedForReplication>0000</FlagsUsedForReplication>
+  </Zones>
+  <Zones>
+    <VisualizationID>10</VisualizationID>
+    <ZoneID>20</ZoneID>
+    <Name>7</Name>
+    <Loop>false</Loop>
+    <Flags>007F</Flags>
+    <Fixed>false</Fixed>
+    <ID>7</ID>
+    <FlagsUsedForReplication>0000</FlagsUsedForReplication>
+  </Zones>
+  <Zones>
+    <VisualizationID>10</VisualizationID>
+    <ZoneID>21</ZoneID>
+    <Name>8</Name>
+    <Loop>false</Loop>
+    <Flags>007F</Flags>
+    <Fixed>false</Fixed>
+    <ID>8</ID>
+    <FlagsUsedForReplication>0000</FlagsUsedForReplication>
+  </Zones>
+  <Zones>
+    <VisualizationID>10</VisualizationID>
+    <ZoneID>22</ZoneID>
+    <Name>9</Name>
+    <Loop>false</Loop>
+    <Flags>007F</Flags>
+    <Fixed>false</Fixed>
+    <ID>9</ID>
+    <FlagsUsedForReplication>0000</FlagsUsedForReplication>
+  </Zones>
+  <Zones>
+    <VisualizationID>10</VisualizationID>
+    <ZoneID>23</ZoneID>
+    <Name>10</Name>
+    <Loop>false</Loop>
+    <Flags>007F</Flags>
+    <Fixed>false</Fixed>
+    <ID>10</ID>
+    <FlagsUsedForReplication>0000</FlagsUsedForReplication>
+  </Zones>
+  <Zones>
+    <VisualizationID>10</VisualizationID>
+    <ZoneID>24</ZoneID>
+    <Name>11</Name>
+    <Loop>false</Loop>
+    <Flags>007F</Flags>
+    <Fixed>false</Fixed>
+    <ID>11</ID>
+    <FlagsUsedForReplication>0000</FlagsUsedForReplication>
+  </Zones>
+  <Zones>
+    <VisualizationID>10</VisualizationID>
+    <ZoneID>25</ZoneID>
+    <Name>12</Name>
+    <Loop>false</Loop>
+    <Flags>007F</Flags>
+    <Fixed>false</Fixed>
+    <ID>12</ID>
+    <FlagsUsedForReplication>0000</FlagsUsedForReplication>
+  </Zones>
+  <Zones>
+    <VisualizationID>5</VisualizationID>
+    <ZoneID>26</ZoneID>
+    <Name>1</Name>
+    <Loop>true</Loop>
+    <Flags>0000</Flags>
+    <Fixed>true</Fixed>
+    <ID>1</ID>
+    <FlagsUsedForReplication>0000</FlagsUsedForReplication>
+  </Zones>
+  <Zones>
+    <VisualizationID>6</VisualizationID>
+    <ZoneID>27</ZoneID>
+    <Name>1</Name>
+    <Loop>true</Loop>
+    <Flags>0000</Flags>
+    <Fixed>true</Fixed>
+    <ID>1</ID>
+    <FlagsUsedForReplication>0000</FlagsUsedForReplication>
+  </Zones>
+  <Zones>
+    <VisualizationID>7</VisualizationID>
+    <ZoneID>28</ZoneID>
+    <Name>1</Name>
+    <Loop>true</Loop>
+    <Flags>0000</Flags>
+    <Fixed>true</Fixed>
+    <ID>1</ID>
+    <FlagsUsedForReplication>0000</FlagsUsedForReplication>
+  </Zones>
+  <Zones>
+    <VisualizationID>8</VisualizationID>
+    <ZoneID>29</ZoneID>
+    <Name>1</Name>
+    <Loop>true</Loop>
+    <Flags>0000</Flags>
+    <Fixed>true</Fixed>
+    <ID>1</ID>
+    <FlagsUsedForReplication>0000</FlagsUsedForReplication>
+  </Zones>
+  <Zones>
+    <VisualizationID>9</VisualizationID>
+    <ZoneID>30</ZoneID>
+    <Name>1</Name>
+    <Loop>true</Loop>
+    <Flags>0000</Flags>
+    <Fixed>true</Fixed>
+    <ID>1</ID>
+    <FlagsUsedForReplication>0000</FlagsUsedForReplication>
+  </Zones>
+</ThemeDataset>

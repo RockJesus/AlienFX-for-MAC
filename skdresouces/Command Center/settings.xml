@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SettingsDS xmlns="http://tempuri.org/SettingsDS.xsd">
+	<SubGroups>
+		<id>1</id>
+		<guid>fea3413e-7e05-4911-9a71-700331f1c294</guid>
+	</SubGroups>
+	<Settings>
+		<id>1</id>
+		<subGroup>1</subGroup>
+		<guid>5e6272be-0ea2-482c-af74-d665cea3c71b</guid>
+		<name>AlienFX</name>
+		<description>@%ResourcesPath%\alienfusionres.dll,-115, AlienFX description</description>
+		<visible>true</visible>
+		<defaultBalancedACIndex>1</defaultBalancedACIndex>
+		<defaultBalancedDCIndex>1</defaultBalancedDCIndex>
+		<defaultPerformanceACIndex>1</defaultPerformanceACIndex>
+		<defaultPerformanceDCIndex>1</defaultPerformanceDCIndex>
+		<defaultPowerSaverACIndex>1</defaultPowerSaverACIndex>
+		<defaultPowerSaverDCIndex>1</defaultPowerSaverDCIndex>
+	</Settings>
+	<DiscreteValues>
+		<setting>1</setting>
+		<value>@%ResourcesPath%\alienfusionres.dll,-114,Off</value>
+	</DiscreteValues>
+	<DiscreteValues>
+		<setting>1</setting>
+		<value>@%ResourcesPath%\alienfusionres.dll,-113,On</value>
+	</DiscreteValues>
+</SettingsDS>

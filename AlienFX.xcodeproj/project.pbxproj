@@ -1,0 +1,603 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		07B79054214BD32100A77F3A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07B79053214BD32100A77F3A /* AppDelegate.swift */; };
+		07B79056214BD32100A77F3A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07B79055214BD32100A77F3A /* ViewController.swift */; };
+		07B79058214BD32100A77F3A /* Document.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07B79057214BD32100A77F3A /* Document.swift */; };
+		07B7905A214BD32200A77F3A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07B79059214BD32200A77F3A /* Assets.xcassets */; };
+		07B7905D214BD32200A77F3A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07B7905B214BD32200A77F3A /* Main.storyboard */; };
+		07B79069214BD32200A77F3A /* AlienFXTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07B79068214BD32200A77F3A /* AlienFXTests.swift */; };
+		07B79074214BD32200A77F3A /* AlienFXUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07B79073214BD32200A77F3A /* AlienFXUITests.swift */; };
+		07B79081214BD92600A77F3A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07B7905B214BD32200A77F3A /* Main.storyboard */; };
+		07B79082214BD92600A77F3A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07B7905B214BD32200A77F3A /* Main.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		07B79065214BD32200A77F3A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 07B79048214BD32100A77F3A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 07B7904F214BD32100A77F3A;
+			remoteInfo = AlienFX;
+		};
+		07B79070214BD32200A77F3A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 07B79048214BD32100A77F3A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 07B7904F214BD32100A77F3A;
+			remoteInfo = AlienFX;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		07B79050214BD32100A77F3A /* AlienFX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlienFX.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		07B79053214BD32100A77F3A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		07B79055214BD32100A77F3A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		07B79057214BD32100A77F3A /* Document.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Document.swift; sourceTree = "<group>"; };
+		07B79059214BD32200A77F3A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		07B7905C214BD32200A77F3A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		07B7905E214BD32200A77F3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		07B7905F214BD32200A77F3A /* AlienFX.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AlienFX.entitlements; sourceTree = "<group>"; };
+		07B79064214BD32200A77F3A /* AlienFXTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AlienFXTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		07B79068214BD32200A77F3A /* AlienFXTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlienFXTests.swift; sourceTree = "<group>"; };
+		07B7906A214BD32200A77F3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		07B7906F214BD32200A77F3A /* AlienFXUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AlienFXUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		07B79073214BD32200A77F3A /* AlienFXUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlienFXUITests.swift; sourceTree = "<group>"; };
+		07B79075214BD32200A77F3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		07B7904D214BD32100A77F3A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		07B79061214BD32200A77F3A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		07B7906C214BD32200A77F3A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		07B79047214BD32100A77F3A = {
+			isa = PBXGroup;
+			children = (
+				07B79052214BD32100A77F3A /* AlienFX */,
+				07B79067214BD32200A77F3A /* AlienFXTests */,
+				07B79072214BD32200A77F3A /* AlienFXUITests */,
+				07B79051214BD32100A77F3A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		07B79051214BD32100A77F3A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				07B79050214BD32100A77F3A /* AlienFX.app */,
+				07B79064214BD32200A77F3A /* AlienFXTests.xctest */,
+				07B7906F214BD32200A77F3A /* AlienFXUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		07B79052214BD32100A77F3A /* AlienFX */ = {
+			isa = PBXGroup;
+			children = (
+				07B79053214BD32100A77F3A /* AppDelegate.swift */,
+				07B79055214BD32100A77F3A /* ViewController.swift */,
+				07B79057214BD32100A77F3A /* Document.swift */,
+				07B79059214BD32200A77F3A /* Assets.xcassets */,
+				07B7905B214BD32200A77F3A /* Main.storyboard */,
+				07B7905E214BD32200A77F3A /* Info.plist */,
+				07B7905F214BD32200A77F3A /* AlienFX.entitlements */,
+			);
+			path = AlienFX;
+			sourceTree = "<group>";
+		};
+		07B79067214BD32200A77F3A /* AlienFXTests */ = {
+			isa = PBXGroup;
+			children = (
+				07B79068214BD32200A77F3A /* AlienFXTests.swift */,
+				07B7906A214BD32200A77F3A /* Info.plist */,
+			);
+			path = AlienFXTests;
+			sourceTree = "<group>";
+		};
+		07B79072214BD32200A77F3A /* AlienFXUITests */ = {
+			isa = PBXGroup;
+			children = (
+				07B79073214BD32200A77F3A /* AlienFXUITests.swift */,
+				07B79075214BD32200A77F3A /* Info.plist */,
+			);
+			path = AlienFXUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		07B7904F214BD32100A77F3A /* AlienFX */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 07B79078214BD32200A77F3A /* Build configuration list for PBXNativeTarget "AlienFX" */;
+			buildPhases = (
+				07B7904C214BD32100A77F3A /* Sources */,
+				07B7904D214BD32100A77F3A /* Frameworks */,
+				07B7904E214BD32100A77F3A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AlienFX;
+			productName = AlienFX;
+			productReference = 07B79050214BD32100A77F3A /* AlienFX.app */;
+			productType = "com.apple.product-type.application";
+		};
+		07B79063214BD32200A77F3A /* AlienFXTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 07B7907B214BD32200A77F3A /* Build configuration list for PBXNativeTarget "AlienFXTests" */;
+			buildPhases = (
+				07B79060214BD32200A77F3A /* Sources */,
+				07B79061214BD32200A77F3A /* Frameworks */,
+				07B79062214BD32200A77F3A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				07B79066214BD32200A77F3A /* PBXTargetDependency */,
+			);
+			name = AlienFXTests;
+			productName = AlienFXTests;
+			productReference = 07B79064214BD32200A77F3A /* AlienFXTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		07B7906E214BD32200A77F3A /* AlienFXUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 07B7907E214BD32200A77F3A /* Build configuration list for PBXNativeTarget "AlienFXUITests" */;
+			buildPhases = (
+				07B7906B214BD32200A77F3A /* Sources */,
+				07B7906C214BD32200A77F3A /* Frameworks */,
+				07B7906D214BD32200A77F3A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				07B79071214BD32200A77F3A /* PBXTargetDependency */,
+			);
+			name = AlienFXUITests;
+			productName = AlienFXUITests;
+			productReference = 07B7906F214BD32200A77F3A /* AlienFXUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		07B79048214BD32100A77F3A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = eric;
+				TargetAttributes = {
+					07B7904F214BD32100A77F3A = {
+						CreatedOnToolsVersion = 9.4.1;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.Mac = {
+								enabled = 0;
+							};
+							com.apple.Keychain = {
+								enabled = 0;
+							};
+							com.apple.Sandbox = {
+								enabled = 1;
+							};
+						};
+					};
+					07B79063214BD32200A77F3A = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = 07B7904F214BD32100A77F3A;
+					};
+					07B7906E214BD32200A77F3A = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = 07B7904F214BD32100A77F3A;
+					};
+				};
+			};
+			buildConfigurationList = 07B7904B214BD32100A77F3A /* Build configuration list for PBXProject "AlienFX" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 07B79047214BD32100A77F3A;
+			productRefGroup = 07B79051214BD32100A77F3A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				07B7904F214BD32100A77F3A /* AlienFX */,
+				07B79063214BD32200A77F3A /* AlienFXTests */,
+				07B7906E214BD32200A77F3A /* AlienFXUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		07B7904E214BD32100A77F3A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07B7905A214BD32200A77F3A /* Assets.xcassets in Resources */,
+				07B7905D214BD32200A77F3A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		07B79062214BD32200A77F3A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07B79081214BD92600A77F3A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		07B7906D214BD32200A77F3A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07B79082214BD92600A77F3A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		07B7904C214BD32100A77F3A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07B79056214BD32100A77F3A /* ViewController.swift in Sources */,
+				07B79054214BD32100A77F3A /* AppDelegate.swift in Sources */,
+				07B79058214BD32100A77F3A /* Document.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		07B79060214BD32200A77F3A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07B79069214BD32200A77F3A /* AlienFXTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		07B7906B214BD32200A77F3A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07B79074214BD32200A77F3A /* AlienFXUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		07B79066214BD32200A77F3A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 07B7904F214BD32100A77F3A /* AlienFX */;
+			targetProxy = 07B79065214BD32200A77F3A /* PBXContainerItemProxy */;
+		};
+		07B79071214BD32200A77F3A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 07B7904F214BD32100A77F3A /* AlienFX */;
+			targetProxy = 07B79070214BD32200A77F3A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		07B7905B214BD32200A77F3A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				07B7905C214BD32200A77F3A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		07B79076214BD32200A77F3A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		07B79077214BD32200A77F3A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		07B79079214BD32200A77F3A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = AlienFX/AlienFX.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 6KQFJLCXLM;
+				INFOPLIST_FILE = AlienFX/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Rockjeus.AlienFX;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		07B7907A214BD32200A77F3A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = AlienFX/AlienFX.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 6KQFJLCXLM;
+				INFOPLIST_FILE = AlienFX/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Rockjeus.AlienFX;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+		07B7907C214BD32200A77F3A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 6KQFJLCXLM;
+				INFOPLIST_FILE = AlienFXTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Rockjeus.AlienFXTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AlienFX.app/Contents/MacOS/AlienFX";
+			};
+			name = Debug;
+		};
+		07B7907D214BD32200A77F3A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 6KQFJLCXLM;
+				INFOPLIST_FILE = AlienFXTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Rockjeus.AlienFXTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AlienFX.app/Contents/MacOS/AlienFX";
+			};
+			name = Release;
+		};
+		07B7907F214BD32200A77F3A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 6KQFJLCXLM;
+				INFOPLIST_FILE = AlienFXUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Rockjeus.AlienFXUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TEST_TARGET_NAME = AlienFX;
+			};
+			name = Debug;
+		};
+		07B79080214BD32200A77F3A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 6KQFJLCXLM;
+				INFOPLIST_FILE = AlienFXUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Rockjeus.AlienFXUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TEST_TARGET_NAME = AlienFX;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		07B7904B214BD32100A77F3A /* Build configuration list for PBXProject "AlienFX" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				07B79076214BD32200A77F3A /* Debug */,
+				07B79077214BD32200A77F3A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		07B79078214BD32200A77F3A /* Build configuration list for PBXNativeTarget "AlienFX" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				07B79079214BD32200A77F3A /* Debug */,
+				07B7907A214BD32200A77F3A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		07B7907B214BD32200A77F3A /* Build configuration list for PBXNativeTarget "AlienFXTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				07B7907C214BD32200A77F3A /* Debug */,
+				07B7907D214BD32200A77F3A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		07B7907E214BD32200A77F3A /* Build configuration list for PBXNativeTarget "AlienFXUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				07B7907F214BD32200A77F3A /* Debug */,
+				07B79080214BD32200A77F3A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 07B79048214BD32100A77F3A /* Project object */;
+}

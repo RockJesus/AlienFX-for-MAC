@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Mats</key>
+	<array>
+		<dict>
+			<key>Editions</key>
+			<array>
+				<dict>
+					<key>EditionUUID</key>
+					<string>12C74AE6-9BF5-44B6-88C9-0E9FDE03CB40</string>
+					<key>EditionDisplayName</key>
+					<string>Razer Goliathus Control</string>
+					<key>EditionImagePath</key>
+					<string>GoliathusControl/GoliathusControl.png</string>
+					<key>EditionThumbnailPath</key>
+					<string>GoliathusControl/GoliathusControlThumbnail.png</string>
+					<key>EditionName</key>
+					<string>RAZER GOLIATHUS CONTROL</string>
+					<key>EditionURL</key>
+					<string>http://www.razerzone.com/gaming-mouse-mats/razer-goliathus-control-edition</string>
+				</dict>
+			</array>
+			<key>Name</key>
+			<string>Razer Goliathus Control</string>
+		</dict>
+		<dict>
+			<key>Editions</key>
+			<array>
+				<dict>
+					<key>EditionUUID</key>
+					<string>9F785704-9CBE-4C95-89B5-BBF1B30661FE</string>
+					<key>EditionDisplayName</key>
+					<string>Razer Goliathus Speed</string>
+					<key>EditionImagePath</key>
+					<string>GoliathusSpeed/GoliathusSpeed.png</string>
+					<key>EditionThumbnailPath</key>
+					<string>GoliathusSpeed/GoliathusSpeedThumbnail.png</string>
+					<key>EditionName</key>
+					<string>RAZER GOLIATHUS SPEED</string>
+					<key>EditionURL</key>
+					<string>http://www.razerzone.com/gaming-mouse-mats/razer-goliathus-speed-edition/</string>
+				</dict>
+			</array>
+			<key>Name</key>
+			<string>Razer Goliathus Speed</string>
+		</dict>
+		<dict>
+			<key>Editions</key>
+			<array>
+				<dict>
+					<key>SubEditions</key>
+					<array>
+						<dict>
+							<key>EditionUUID</key>
+							<string>D4BDE571-440B-4DAD-BA28-3E728D508582</string>
+							<key>EditionRadioLabel</key>
+							<string>Speed</string>
+							<key>EditionURL</key>
+							<string>http://www.razerzone.com/gaming-mouse-mats/razer-vespula/</string>
+							<key>EditionName</key>
+							<string>RAZER VESPULA SPEED</string>
+							<key>EditionThumbnailPath</key>
+							<string>Vespula/VespulaSpeedThumbnail.png</string>
+							<key>EditionImagePath</key>
+							<string>Vespula/VespulaSpeed.png</string>
+							<key>EditionDisplayName</key>
+							<string>Razer Vespula Speed</string>
+						</dict>
+						<dict>
+							<key>EditionUUID</key>
+							<string>DF5E4C58-0CF9-4B56-96C5-3BEFE9FEB644</string>
+							<key>EditionRadioLabel</key>
+							<string>Control</string>
+							<key>EditionURL</key>
+							<string>http://www.razerzone.com/gaming-mouse-mats/razer-vespula/</string>
+							<key>EditionName</key>
+							<string>RAZER VESPULA CONTROL</string>
+							<key>EditionThumbnailPath</key>
+							<string>Vespula/VespulaControlThumbnail.png</string>
+							<key>EditionImagePath</key>
+							<string>Vespula/VespulaControl.png</string>
+							<key>EditionDisplayName</key>
+							<string>Razer Vespula Control</string>
+						</dict>
+					</array>
+				</dict>
+				<dict>
+					<key>SubEditions</key>
+					<array>
+						<dict>
+							<key>EditionUUID</key>
+							<string>ABC48338-7571-4C95-A27A-78D5BD28C57E</string>
+							<key>EditionRadioLabel</key>
+							<string>Speed</string>
+							<key>EditionURL</key>
+							<string>http://www.razerzone.com/gaming-mouse-mats/razer-vespula/</string>
+							<key>EditionName</key>
+							<string>MASS EFFECT 3 SPEED</string>
+							<key>EditionThumbnailPath</key>
+							<string>Vespula/MassEffect3_1Thumbnail.png</string>
+							<key>EditionImagePath</key>
+							<string>Vespula/MassEffect3_1.png</string>
+							<key>EditionDisplayName</key>
+							<string>Mass Effect 3 Speed</string>
+						</dict>
+						<dict>
+							<key>EditionUUID</key>
+							<string>E1189431-60D6-4164-AC03-8DAFC2489239</string>
+							<key>EditionRadioLabel</key>
+							<string>Control</string>
+							<key>EditionURL</key>
+							<string>http://www.razerzone.com/gaming-mouse-mats/razer-vespula/</string>
+							<key>EditionName</key>
+							<string>MASS EFFECT 3 CONTROL</string>
+							<key>EditionThumbnailPath</key>
+							<string>Vespula/MassEffect3_2Thumbnail.png</string>
+							<key>EditionImagePath</key>
+							<string>Vespula/MassEffect3_2.png</string>
+							<key>EditionDisplayName</key>
+							<string>Mass Effect 3 Control</string>
+						</dict>
+					</array>
+				</dict>
+			</array>
+			<key>Name</key>
+			<string>Razer Vespula</string>
+		</dict>
+		<dict>
+			<key>Editions</key>
+			<array>
+				<dict>
+					<key>EditionUUID</key>
+					<string>26813DF9-A1FF-40DE-BB40-FD3D321763FC</string>
+					<key>EditionDisplayName</key>
+					<string>Razer Scarab</string>
+					<key>EditionThumbnailPath</key>
+					<string>Scarab/ScarabThumbnail.png</string>
+					<key>EditionImagePath</key>
+					<string>Scarab/Scarab.png</string>
+					<key>EditionName</key>
+					<string>RAZER SCARAB</string>
+					<key>EditionURL</key>
+					<string>http://www.razerzone.com/gaming-mouse-mats</string>
+				</dict>
+				<dict>
+					<key>EditionUUID</key>
+					<string>486F7127-08F5-4C46-96AF-FA00E6BF4A42</string>
+					<key>EditionDisplayName</key>
+					<string>Battlefield 3</string>
+					<key>EditionThumbnailPath</key>
+					<string>Scarab/Battlefield3Thumbnail.png</string>
+					<key>EditionImagePath</key>
+					<string>Scarab/Battlefield3.png</string>
+					<key>EditionName</key>
+					<string>BATTLEFIELD 3</string>
+					<key>EditionURL</key>
+					<string>http://www.razerzone.com/gaming-mouse-mats</string>
+				</dict>
+			</array>
+			<key>Name</key>
+			<string>Razer Scarab</string>
+		</dict>
+		<dict>
+			<key>Editions</key>
+			<array>
+				<dict>
+					<key>EditionUUID</key>
+					<string>E3644EDA-CAA5-4F08-8DBD-5135905BB8C4</string>
+					<key>EditionDisplayName</key>
+					<string>Razer TRON</string>
+					<key>EditionThumbnailPath</key>
+					<string>TRON/TRONThumbnail.png</string>
+					<key>EditionImagePath</key>
+					<string>TRON/TRON.png</string>
+					<key>EditionName</key>
+					<string>RAZER TRON</string>
+					<key>EditionURL</key>
+					<string>http://www.razerzone.com/gaming-mouse-mats</string>
+				</dict>
+			</array>
+			<key>Name</key>
+			<string>Razer TRON</string>
+		</dict>
+		<dict>
+			<key>Editions</key>
+			<array>
+				<dict>
+					<key>EditionUUID</key>
+					<string>71239F34-CE66-410E-9B25-F36AC56BD975</string>
+					<key>EditionDisplayName</key>
+					<string>Razer Ironclad</string>
+					<key>EditionThumbnailPath</key>
+					<string>Ironclad/IroncladThumbnail.png</string>
+					<key>EditionImagePath</key>
+					<string>Ironclad/Ironclad.png</string>
+					<key>EditionName</key>
+					<string>RAZER IRONCLAD</string>
+					<key>EditionURL</key>
+					<string>http://www.razerzone.com/gaming-mouse-mats</string>
+				</dict>
+			</array>
+			<key>Name</key>
+			<string>Razer Ironclad</string>
+		</dict>
+		<dict>
+			<key>Editions</key>
+			<array>
+				<dict>
+					<key>EditionUUID</key>
+					<string>58438A20-D86F-4CBD-B870-43C8F9E6719B</string>
+					<key>EditionDisplayName</key>
+					<string>Razer Kabuto</string>
+					<key>EditionThumbnailPath</key>
+					<string>Kabuto/KabutoThumbnail.png</string>
+					<key>EditionImagePath</key>
+					<string>Kabuto/Kabuto.png</string>
+					<key>EditionName</key>
+					<string>RAZER KABUTO</string>
+					<key>EditionURL</key>
+					<string>http://www.razerzone.com/gaming-mouse-mats/razer-kabuto/</string>
+				</dict>
+			</array>
+			<key>Name</key>
+			<string>Razer Kabuto</string>
+		</dict>
+	</array>
+</dict>
+</plist>
